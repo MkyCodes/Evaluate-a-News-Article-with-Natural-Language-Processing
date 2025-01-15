@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Project</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav class="navigation">Navigation</nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Submit Your URL</h1>
+            <form id="urlForm" action="#" method="POST">
+                <label for="urlInput">Enter URL:</label>
+                <input
+                    id="urlInput"
+                    type="url"
+                    name="url"
+                    placeholder="https://example.com"
+                    required
+                />
+                <button id="submitButton" type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2>Form Results:</h2>
+            <div id="ifpolar"></div>
+            <div id="issubject"></div>
+            <div id="text"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Udacity. All rights reserved.</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(() => console.log('Service Worker registered successfully'))
+                    .catch(error => console.error('Service Worker registration failed:', error));
+            });
+        }
+    </script>
+</body>
+</html>

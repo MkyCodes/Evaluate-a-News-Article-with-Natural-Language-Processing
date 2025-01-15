@@ -1,0 +1,25 @@
+/* Header styles */
+.header {
+    background-color: #1f1f1f; // Darker header background
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    nav {
+      display: flex;
+      gap: 1.5rem;
+  
+      a {
+        color: #e0e0e0;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #bb86fc; // Change on hover
+        }
+      }
+    }
+  }

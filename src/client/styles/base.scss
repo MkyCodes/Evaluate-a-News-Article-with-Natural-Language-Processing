@@ -1,0 +1,20 @@
+/* Base styles for the application */
+body {
+    background-color: #121212; // Dark background
+    color: #e0e0e0; // Light text color
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; // White headings
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: #bb86fc; // Light purple for links
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+      color: #3700b3; // Darker purple on hover
+    }
+  }

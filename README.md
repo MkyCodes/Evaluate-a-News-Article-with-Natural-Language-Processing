@@ -1,2 +1,4 @@
-# Evaluate-a-News-Article-with-Natural-Language-Processing
-Evaluate a News Article with Natural Language Processing Using Webpack &amp; API
+Udacity NLP Prjrct 
+
+This project is a web-based Using api form meancloud.
+
